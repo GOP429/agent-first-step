@@ -1,0 +1,72 @@
+[
+  {
+    "query": "ToolCall是什么？",
+    "should_retrieve": true,
+    "expected_text": "ToolCall"
+  },
+  {
+    "query": "谁负责读取调用单并找到工具？",
+    "should_retrieve": true,
+    "expected_text": "execute"
+  },
+  {
+    "query": "不同会话怎样隔离？",
+    "should_retrieve": true,
+    "expected_text": "thread_id"
+  },
+  {
+    "query": "状态怎样长期保存到电脑中？",
+    "should_retrieve": true,
+    "expected_text": "SqliteSaver"
+  },
+  {
+    "query": "北京明天天气怎么样？",
+    "should_retrieve": false,
+    "expected_text": null
+  },
+  {
+    "query": "给我推荐一部电影。",
+    "should_retrieve": false,
+    "expected_text": null
+  },
+  {
+    "query": "模型生成的调用单会自己把工具运行起来吗？",
+    "should_retrieve": true,
+    "expected_text": "不会执行工具"
+  },
+  {
+    "query": "程序重启后怎样恢复Agent状态？",
+    "should_retrieve": true,
+    "expected_text": "SqliteSaver"
+  },
+  {
+    "query": "LangGraph怎样添加工作流节点？",
+    "should_retrieve": false,
+    "expected_text": null
+  },
+  {
+    "query": "Agent怎样连接MySQL数据库？",
+    "should_retrieve": false,
+    "expected_text": null
+  },
+  {
+    "query": "派工单自己能干活吗？",
+    "should_retrieve": true,
+    "expected_text": "ToolCall"
+  },
+  {
+    "query": "机器人关闭以后还记得我吗？",
+    "should_retrieve": true,
+    "expected_text": "SqliteSaver"
+  },
+    {
+    "query": "LangChain和LangGraph的定位有什么不同？",
+    "should_retrieve": true,
+    "expected_text": "LangChain"
+  },
+  {
+    "query": "LangGraph是不是只能让多个智能体一起工作？",
+    "should_retrieve": true,
+    "expected_text": "多智能体协作"
+  }
+]

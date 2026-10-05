@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+
+.venv/
+.venv_broken_backup/
+.env
+.env.*
+*.encrypted
+
+data/*.sqlite*
+data/todos*.json
+data/document_vectors.json
